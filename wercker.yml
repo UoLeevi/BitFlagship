@@ -26,5 +26,5 @@ deploy:
       repository: uoleevi/bitflagship
       registry: https://registry.hub.docker.com/v2
       entrypoint: dotnet 
-      cmd: $WERCKER_OUTPUT_DIR/app/publish/BitFlagship.dll
+      cmd: /pipeline/source/app/publish/BitFlagship.dll
       ports: "5000"
