@@ -8,6 +8,6 @@ namespace BitFlagship.Controllers
     {
         [HttpGet("{endPoint?}")]
         public IActionResult GetEcho(string endPoint)
-            => Ok($@"""Response"": ""{endPoint ?? "Hello!"}""");
+            => Ok(Json(endPoint ?? "Hello from BitFlagship!"));
     }
 }
