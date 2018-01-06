@@ -26,4 +26,4 @@ deploy:
       password: $PASSWORD
       repository: uoleevi/bitflagship
       registry: https://registry.hub.docker.com/v2
-      cmd: "dotnet bitflagship.dll"
+      entrypoint: "dotnet bitflagship.dll"
