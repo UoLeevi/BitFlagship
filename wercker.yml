@@ -18,7 +18,6 @@ build:
         name: copy output
         code: |
           cp -r . $WERCKER_OUTPUT_DIR/app
-          cd $WERCKER_OUTPUT_DIR/app/publish
 deploy:
   steps:
     - internal/docker-push:
@@ -26,4 +25,4 @@ deploy:
       password: $PASSWORD
       repository: uoleevi/bitflagship
       registry: https://registry.hub.docker.com/v2
-      entrypoint: "dotnet bitflagship.dll"
+      entrypoint: dotnet pipeline/source/app/publish/bitflagship.dll
