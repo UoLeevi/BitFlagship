@@ -25,5 +25,5 @@ deploy:
       username: $USERNAME
       password: $PASSWORD
       repository: uoleevi/bitflagship
-      registry: https://registry.hub.docker.com
+      registry: https://registry.hub.docker.com/v2
       entrypoint: "/pipeline/source/app/docker_entrypoint.sh"
